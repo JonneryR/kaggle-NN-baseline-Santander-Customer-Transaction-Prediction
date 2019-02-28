@@ -4,7 +4,7 @@ import lightgbm as lgb
 import time,datetime
 import catboost as cgb
 import xgboost as xgb
-%run util.py
+from util import *
 device = tr.device('cuda')
 
 df_train = pd.read_csv('./data/train.csv')
